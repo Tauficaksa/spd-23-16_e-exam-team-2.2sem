@@ -1,10 +1,10 @@
 const environment = process.env.NODE_ENV;
 
-let base_local_url = 'http://localhost:3000';
-let base_backend_url = 'http://localhost:5000';
+let base_local_url = 'https://tauficaksa2200032421-admin.vercel.app/';
+let base_backend_url = 'https://tauficaksa2200032421.vercel.app/';
 if(environment==='docker') {
-  base_local_url = 'http://user-frontend-app:3000';
-  base_backend_url = 'http://backend:5000';
+  base_local_url = 'https://tauficaksa2200032421-admin.vercel.app/';
+  base_backend_url = 'https://tauficaksa2200032421.vercel.app/';
 }
 
 const apis = {

@@ -20,7 +20,9 @@ app.use(function(req, res, next) {
 
 
 const corsOptions = {
-    origin: '*'
+    origin: '*',
+    methods:["POST" , "GET"],
+    credentials: true
   }
 app.use(cors(corsOptions));
 app.use(expressValidator());
@@ -34,6 +36,7 @@ var login = require("./routes/login");
 var adminLogin = require('./routes/adminLogin');
 var admin = require('./routes/admin');
 var user = require('./routes/user');
+const { METHODS } = require('http');
 
 
 //configs
