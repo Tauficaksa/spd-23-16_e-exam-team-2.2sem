@@ -21,8 +21,8 @@ app.use(function(req, res, next) {
 
 const corsOptions = {
     origin: '*',
-    // methods:["POST" , "GET"],
-    // credentials: true
+    methods:["POST" , "GET"],
+    credentials: true
   }
 app.use(cors(corsOptions));
 app.use(expressValidator());
