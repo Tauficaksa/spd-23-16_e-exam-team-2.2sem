@@ -20,9 +20,9 @@ app.use(function(req, res, next) {
 
 
 const corsOptions = {
-    origin: '*',
-    // methods:["POST" , "GET"],
-    // credentials: true
+    origin: 'https://tauficaksa2200032421-admin.vercel.app/',
+    methods:["POST" , "GET"],
+    credentials: true
   }
 app.use(cors(corsOptions));
 app.use(expressValidator());
