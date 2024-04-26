@@ -1,0 +1,40 @@
+th, td {
+  border : 1px solid black;
+  width: 100%;
+}
+th{
+  background-color: black;
+  color: aliceblue;
+}
+.action
+{
+  background-color: #888888;
+  transition: all 1s;
+}
+
+.action:hover
+{
+  background-color: rgb(233, 106, 106);
+}
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -10%);
+  background:lightblue;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  transition: all 1s;
+}
+.main:hover{
+  box-shadow: 30px 30px 8px #888888;
+  background: white;
+}
+
+.title {
+  color:black;
+  text-align: center;
+}
