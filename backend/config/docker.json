@@ -1,6 +1,6 @@
 {
   "mongodb": {
-    "connectionString": "mongodb://admin:password@mongodb:27017/online-exam-portal",
+    "connectionString": "mongodb+srv://admin:password@cluster0.lennuwq.mongodb.net/online-exam-portal",
     "authDB":"admin"
   },
   "jwt": {

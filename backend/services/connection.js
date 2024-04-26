@@ -15,17 +15,22 @@ let options = {
   useFindAndModify :  false
 };
 
+// MongoDB Atlas connection string
+const connectionString = config.get('mongodb.connectionString');
+
 if(process.env.NODE_ENV==="docker") {
   options.authSource = config.get('mongodb.authDB')
 }
 
-mongoose.connect(config.get('mongodb.connectionString'),options).then(()=>{
-    console.log("connected to mongoDB");
+mongoose.connect(connectionString, options)
+  .then(() => {
+    console.log("Connected to MongoDB");
     adminService.addAdminIfNotFound();
-    
-}).catch((err)=>{
-    console.log("Error connecting to database",err);
-})
+  })
+  .catch((err) => {
+    console.log("Error connecting to database", err);
+  });
+
 
 
 module.exports=mongoose;
