@@ -20,7 +20,7 @@ app.use(function(req, res, next) {
 
 
 const corsOptions = {
-    origin: 'https://tauficaksa2200032421-admin.vercel.app',
+    origin: ['https://tauficaksa2200032421-admin.vercel.app'],
     methods:["POST" , "GET"],
     credentials: true
   }
