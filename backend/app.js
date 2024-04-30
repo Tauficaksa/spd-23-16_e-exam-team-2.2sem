@@ -21,6 +21,8 @@ app.use(function(req, res, next) {
 
 const corsOptions = {
     origin: ["*"],
+    methods : ["POST" , "GET"],
+    Credentials : true 
     
   }
 app.use(cors(corsOptions));
